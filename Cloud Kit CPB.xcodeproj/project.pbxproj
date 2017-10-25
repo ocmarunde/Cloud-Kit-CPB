@@ -12,6 +12,7 @@
 		9DDA49CF1F9F7F500042E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49CD1F9F7F500042E6E7 /* Main.storyboard */; };
 		9DDA49D11F9F7F500042E6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49D01F9F7F500042E6E7 /* Assets.xcassets */; };
 		9DDA49D41F9F7F500042E6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49D21F9F7F500042E6E7 /* LaunchScreen.storyboard */; };
+		9DDA49DE1F9F7F670042E6E7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA49DD1F9F7F670042E6E7 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		9DDA49D01F9F7F500042E6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DDA49D31F9F7F500042E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DDA49D51F9F7F500042E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDA49DB1F9F7F640042E6E7 /* Cloud Kit CPB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Cloud Kit CPB.entitlements"; sourceTree = "<group>"; };
+		9DDA49DD1F9F7F670042E6E7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDA49DE1F9F7F670042E6E7 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				9DDA49C81F9F7F500042E6E7 /* Cloud Kit CPB */,
 				9DDA49C71F9F7F500042E6E7 /* Products */,
+				9DDA49DC1F9F7F670042E6E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +59,7 @@
 		9DDA49C81F9F7F500042E6E7 /* Cloud Kit CPB */ = {
 			isa = PBXGroup;
 			children = (
+				9DDA49DB1F9F7F640042E6E7 /* Cloud Kit CPB.entitlements */,
 				9DDA49C91F9F7F500042E6E7 /* AppDelegate.swift */,
 				9DDA49CB1F9F7F500042E6E7 /* ViewController.swift */,
 				9DDA49CD1F9F7F500042E6E7 /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				9DDA49D51F9F7F500042E6E7 /* Info.plist */,
 			);
 			path = "Cloud Kit CPB";
+			sourceTree = "<group>";
+		};
+		9DDA49DC1F9F7F670042E6E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DDA49DD1F9F7F670042E6E7 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +111,14 @@
 					9DDA49C51F9F7F500042E6E7 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cloud Kit CPB/Cloud Kit CPB.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWYT76Q3DS;
 				INFOPLIST_FILE = "Cloud Kit CPB/Info.plist";
@@ -289,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cloud Kit CPB/Cloud Kit CPB.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWYT76Q3DS;
 				INFOPLIST_FILE = "Cloud Kit CPB/Info.plist";
