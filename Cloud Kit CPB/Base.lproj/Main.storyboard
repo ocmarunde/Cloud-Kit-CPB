@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="oIF-th-wJh">
             <objects>
-                <viewController id="HNP-Bg-g7M" customClass="ViewController" customModule="CollegeProfileBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HNP-Bg-g7M" customClass="ViewController" customModule="Cloud_Kit_CPB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apt-0W-4n2"/>
                         <viewControllerLayoutGuide type="bottom" id="yRH-3D-8h7"/>
@@ -27,7 +27,7 @@
                                 <rect key="frame" x="-4" y="64" width="383" height="603"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" textLabel="mcb-z1-Bg4" detailTextLabel="6kv-TK-lrb" style="IBUITableViewCellStyleSubtitle" id="PGc-tP-qMz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="mcb-z1-Bg4" detailTextLabel="6kv-TK-lrb" style="IBUITableViewCellStyleSubtitle" id="PGc-tP-qMz">
                                         <rect key="frame" x="0.0" y="28" width="383" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PGc-tP-qMz" id="5gt-Xd-6CS">
@@ -75,18 +75,19 @@
                     <navigationItem key="navigationItem" id="Cv9-ec-o9X">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="yvR-dA-pS5">
                             <connections>
-                                <action selector="onEditButtonPressed:" destination="HNP-Bg-g7M" id="Oax-yu-VPh"/>
+                                <action selector="onEditButton:" destination="HNP-Bg-g7M" id="3nK-Ht-1Ud"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZ0-1e-xv0">
                             <connections>
-                                <action selector="onAddButtonPressed:" destination="HNP-Bg-g7M" id="bg8-TM-lxn"/>
+                                <action selector="onAddButton:" destination="HNP-Bg-g7M" id="a5G-ga-zez"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="editButton" destination="yvR-dA-pS5" id="Y83-fV-U4D"/>
-                        <outlet property="myTableView" destination="Uaj-lS-SoG" id="XFr-kp-MKh"/>
+                        <outlet property="addButton" destination="EZ0-1e-xv0" id="t2L-cA-SOz"/>
+                        <outlet property="editButton" destination="yvR-dA-pS5" id="6Pw-Kk-ikG"/>
+                        <outlet property="tabelView" destination="Uaj-lS-SoG" id="Iph-VV-2Kw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pZ-hH-yU6" sceneMemberID="firstResponder"/>
@@ -96,7 +97,7 @@
         <!--Details View Controller-->
         <scene sceneID="tAW-py-dgb">
             <objects>
-                <viewController id="RIy-oU-j2Y" customClass="DetailsViewController" customModule="CollegeProfileBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RIy-oU-j2Y" customClass="DetailsViewController" customModule="Cloud_Kit_CPB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Nj-x0-yxF"/>
                         <viewControllerLayoutGuide type="bottom" id="Efl-U4-Vkr"/>
@@ -270,7 +271,7 @@
         <!--Map View Controller-->
         <scene sceneID="jT0-qu-lqX">
             <objects>
-                <viewController id="zye-5B-PKx" customClass="MapViewController" customModule="CollegeProfileBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zye-5B-PKx" customClass="MapViewController" customModule="Cloud_Kit_CPB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y9g-wG-7pi"/>
                         <viewControllerLayoutGuide type="bottom" id="jsa-mZ-E7l"/>

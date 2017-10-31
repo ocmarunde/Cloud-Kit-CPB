@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DC589841FA0CC44009A1033 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC589821FA0CC44009A1033 /* DetailsViewController.swift */; };
+		9DC589851FA0CC44009A1033 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC589831FA0CC44009A1033 /* MapViewController.swift */; };
+		9DC589871FA0CCFC009A1033 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC589861FA0CCFC009A1033 /* College.swift */; };
 		9DDA49CA1F9F7F500042E6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDA49C91F9F7F500042E6E7 /* AppDelegate.swift */; };
 		9DDA49CC1F9F7F500042E6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDA49CB1F9F7F500042E6E7 /* ViewController.swift */; };
 		9DDA49CF1F9F7F500042E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49CD1F9F7F500042E6E7 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DC589821FA0CC44009A1033 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../../CollegeProfileBuilder/CollegeProfileBuilder/DetailsViewController.swift; sourceTree = "<group>"; };
+		9DC589831FA0CC44009A1033 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../CollegeProfileBuilder/CollegeProfileBuilder/MapViewController.swift; sourceTree = "<group>"; };
+		9DC589861FA0CCFC009A1033 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = College.swift; path = ../../CollegeProfileBuilder/CollegeProfileBuilder/College.swift; sourceTree = "<group>"; };
 		9DDA49C61F9F7F500042E6E7 /* Cloud Kit CPB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloud Kit CPB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDA49C91F9F7F500042E6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DDA49CB1F9F7F500042E6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,9 +68,12 @@
 				9DDA49DB1F9F7F640042E6E7 /* Cloud Kit CPB.entitlements */,
 				9DDA49C91F9F7F500042E6E7 /* AppDelegate.swift */,
 				9DDA49CB1F9F7F500042E6E7 /* ViewController.swift */,
+				9DC589821FA0CC44009A1033 /* DetailsViewController.swift */,
+				9DC589861FA0CCFC009A1033 /* College.swift */,
+				9DC589831FA0CC44009A1033 /* MapViewController.swift */,
 				9DDA49CD1F9F7F500042E6E7 /* Main.storyboard */,
-				9DDA49D01F9F7F500042E6E7 /* Assets.xcassets */,
 				9DDA49D21F9F7F500042E6E7 /* LaunchScreen.storyboard */,
+				9DDA49D01F9F7F500042E6E7 /* Assets.xcassets */,
 				9DDA49D51F9F7F500042E6E7 /* Info.plist */,
 			);
 			path = "Cloud Kit CPB";
@@ -160,6 +169,9 @@
 			files = (
 				9DDA49CC1F9F7F500042E6E7 /* ViewController.swift in Sources */,
 				9DDA49CA1F9F7F500042E6E7 /* AppDelegate.swift in Sources */,
+				9DC589851FA0CC44009A1033 /* MapViewController.swift in Sources */,
+				9DC589841FA0CC44009A1033 /* DetailsViewController.swift in Sources */,
+				9DC589871FA0CCFC009A1033 /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
